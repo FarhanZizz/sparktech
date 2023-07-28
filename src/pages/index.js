@@ -1,19 +1,17 @@
+import FeaturedCategories from "@/Components/Home/FeaturedCategories";
+import FeaturedProducts from "@/Components/Home/FeaturedProducts";
+import Hero from "@/Components/Home/Hero";
 import RootLayout from "@/Components/Layout/RootLayout";
-import ProductCard from "@/Components/ProductCard";
-import StarRating from "@/Components/StarRating";
+import ProductCard from "@/Components/Product/ProductCard";
+import StarRating from "@/Components/Product/StarRating";
 import React from "react";
 
 const HomePage = () => {
   return (
     <div>
-      <div className="grid grid-cols-3 gap-y-14">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-      </div>
+      <Hero />
+      <FeaturedProducts />
+      <FeaturedCategories />
     </div>
   );
 };

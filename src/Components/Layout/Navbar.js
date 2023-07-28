@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 const Navbar = () => {
@@ -71,7 +70,6 @@ const Navbar = () => {
           </ul>
         </div>
         <Link href="/" className="btn btn-ghost normal-case text-xl">
-          <Image src="/logo.png" width={40} height={40}></Image>
           SparkTech
         </Link>
       </div>
@@ -79,7 +77,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal gap-10">{menu}</ul>
       </div>
       <div className="navbar-end">
-        <Link href="/pc-builder" className="btn btn-outline rounded-none">
+        <Link href="/pc-builder" className="btn btn-outline rounded-none ">
           PC Builder
         </Link>
       </div>

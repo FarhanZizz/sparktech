@@ -41,12 +41,12 @@ const StarRating = ({ averageRating }) => {
   };
 
   return (
-    <div className="flex items-center mt-2.5 mb-5">
+    <div className="flex w-3/5 md:w-full mx-auto justify-evenly md:justify-normal items-center ">
       {/* Call the generateStars function to display the stars */}
       {generateStars(averageRating)}
 
       {/* Display the average rating */}
-      <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">
+      <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">
         {averageRating.toFixed(1)}
       </span>
     </div>
