@@ -1,12 +1,25 @@
 import RootLayout from "@/Components/Layout/RootLayout";
+import ProductCard from "@/Components/ProductCard";
+import StarRating from "@/Components/StarRating";
 import React from "react";
 
-const index = () => {
-  return <div>DAD</div>;
+const HomePage = () => {
+  return (
+    <div>
+      <div className="grid grid-cols-3 gap-y-14">
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+      </div>
+    </div>
+  );
 };
 
-export default index;
+export default HomePage;
 
-index.getLayout = function getLayout(page) {
+HomePage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
