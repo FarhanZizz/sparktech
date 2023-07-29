@@ -60,7 +60,7 @@ const FeaturedCategories = () => {
           <span class="flex-1 ml-3 whitespace-nowrap">Monitors</span>
         </Link>
         <Link
-          href="/monitor"
+          href="/others"
           class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
         >
           <Image src="/others.png" width={30} height={30}></Image>

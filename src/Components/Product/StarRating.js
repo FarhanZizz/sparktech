@@ -41,7 +41,7 @@ const StarRating = ({ averageRating }) => {
   };
 
   return (
-    <div className="flex w-3/5 md:w-full mx-auto justify-evenly md:justify-normal items-center ">
+    <div className="flex justify-center  md:justify-normal items-center ">
       {/* Call the generateStars function to display the stars */}
       {generateStars(averageRating)}
 

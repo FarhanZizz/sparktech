@@ -1,17 +1,20 @@
 import React from "react";
 import StarRating from "./StarRating";
 import Link from "next/link";
+import Image from "next/image";
 
 const ProductCard = () => {
   return (
     <div class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow">
-      <Link href="/">
-        <img
-          class="rounded-t-lg mx-auto"
-          src="https://www.cloud.ryanscomputers.com/cdn/products/medium/mi-curved-34-inch-wqhd-3440x1440-gaming-monitor-11602570977.webp"
-          alt="product image"
-        />
-      </Link>
+      <Image
+        className="rounded-t-lg mx-auto"
+        src="https://www.cloud.ryanscomputers.com/cdn/products/medium/mi-curved-34-inch-wqhd-3440x1440-gaming-monitor-11602570977.webp"
+        alt="product image"
+        width={100}
+        height={100}
+        layout="responsive"
+      />
+
       <div class="px-5 pb-5">
         <a href="#">
           <h5 class="text-xl font-semibold tracking-tight text-gray-900">
@@ -19,7 +22,9 @@ const ProductCard = () => {
           </h5>
         </a>
         <div class="grid grid-cols-1 md:grid-flow-col items-center gap-2 mt-2 mb-5">
-          <StarRating averageRating={2.3} />
+          <div>
+            <StarRating averageRating={2.3} />
+          </div>
           <div className="flex justify-center gap-4 mt-2 md:mt-0">
             {/* <span className="bg-green-200 text-gray-900 text-xs font-semibold  px-2.5 py-0.5 rounded  mt-2 mb-5">
             In Stock
