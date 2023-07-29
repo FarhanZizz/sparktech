@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen">
+    <div className="mt-14 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse justify-between">
         <Image src="/hero.png" width={600} height={600} />
         <div className="lg:w-1/2">

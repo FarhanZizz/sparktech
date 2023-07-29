@@ -1,17 +1,23 @@
 import Link from "next/link";
 import React from "react";
+import { useSession, signOut, signIn } from "next-auth/react";
 const Navbar = () => {
+  const { data: session } = useSession();
   const menu = (
     <>
       <li>
         <Link href="/">Home</Link>
       </li>
-      <li>
-        <Link href="/login">Login</Link>
-      </li>
-      <li>
-        <Link href="/signup">Signup</Link>
-      </li>
+      {session?.user ? (
+        <li>
+          <button onClick={() => signOut()}>Logout</button>
+        </li>
+      ) : (
+        <li>
+          <button onClick={() => signIn("google")}>Login</button>
+        </li>
+      )}
+
       <li tabIndex={0}>
         <details>
           <summary>Parent</summary>
