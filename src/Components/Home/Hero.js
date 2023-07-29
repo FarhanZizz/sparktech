@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="mt-14 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse justify-between">
-        <Image src="/hero.png" width={600} height={600} />
+        <Image alt="hero" src="/hero.png" width={600} height={600} />
         <div className="lg:w-1/2">
           <h1 className="text-5xl font-bold">
             Unleash the Power of Custom PC Builds!

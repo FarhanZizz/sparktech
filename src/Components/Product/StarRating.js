@@ -5,7 +5,7 @@ const StarRating = ({ averageRating }) => {
   const generateStars = (rating) => {
     const filledStarIcon = (
       <svg
-        class="w-4 h-4 text-yellow-300 mr-1"
+        className="w-4 h-4 text-yellow-300 mr-1"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
@@ -17,7 +17,7 @@ const StarRating = ({ averageRating }) => {
 
     const unfilledStarIcon = (
       <svg
-        class="w-4 h-4 text-gray-200 "
+        className="w-4 h-4 text-gray-200 "
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
@@ -31,9 +31,17 @@ const StarRating = ({ averageRating }) => {
 
     for (let i = 1; i <= 5; i++) {
       if (i <= rating) {
-        stars.push(filledStarIcon);
+        stars.push(
+          <React.Fragment key={`filledStar_${i}`}>
+            {filledStarIcon}
+          </React.Fragment>
+        );
       } else {
-        stars.push(unfilledStarIcon);
+        stars.push(
+          <React.Fragment key={`unfilledStar_${i}`}>
+            {unfilledStarIcon}
+          </React.Fragment>
+        );
       }
     }
 

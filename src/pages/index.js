@@ -6,11 +6,11 @@ import ProductCard from "@/Components/Product/ProductCard";
 import StarRating from "@/Components/Product/StarRating";
 import React from "react";
 
-const HomePage = () => {
+const HomePage = ({ products }) => {
   return (
     <div>
       <Hero />
-      <FeaturedProducts />
+      <FeaturedProducts products={products} />
       <FeaturedCategories />
     </div>
   );
@@ -21,3 +21,13 @@ export default HomePage;
 HomePage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
+
+export async function getStaticProps() {
+  const res = await fetch("http://localhost:5000/featured-products");
+  const products = await res.json();
+  return {
+    props: {
+      products,
+    },
+  };
+}

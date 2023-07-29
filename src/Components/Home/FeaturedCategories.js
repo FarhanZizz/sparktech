@@ -19,52 +19,69 @@ const FeaturedCategories = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Link
           href="/cpu"
-          class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
+          className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
         >
-          <Image src="/cpu.png" width={30} height={30}></Image>
-          <span class="flex-1 ml-3 whitespace-nowrap">CPU / Processor</span>
+          <Image alt="CPU" src="/cpu.png" width={30} height={30}></Image>
+          <span className="flex-1 ml-3 whitespace-nowrap">CPU / Processor</span>
         </Link>
         <Link
           href="/motherboard"
-          class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
+          className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
         >
-          <Image src="/motherboard.png" width={30} height={30}></Image>
-          <span class="flex-1 ml-3 whitespace-nowrap">Motherboard</span>
+          <Image
+            alt="Motherboard"
+            src="/motherboard.png"
+            width={30}
+            height={30}
+          ></Image>
+          <span className="flex-1 ml-3 whitespace-nowrap">Motherboard</span>
         </Link>
         <Link
           href="/ram"
-          class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
+          className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
         >
-          <Image src="/ram.png" width={30} height={30}></Image>
-          <span class="flex-1 ml-3 whitespace-nowrap">RAM</span>
+          <Image alt="RAM" src="/ram.png" width={30} height={30}></Image>
+          <span className="flex-1 ml-3 whitespace-nowrap">RAM</span>
         </Link>
         <Link
           href="/psu"
-          class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
+          className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
         >
-          <Image src="/psu.png" width={30} height={30}></Image>
-          <span class="flex-1 ml-3 whitespace-nowrap">Power Supply Unit</span>
+          <Image alt="PSU" src="/psu.png" width={30} height={30}></Image>
+          <span className="flex-1 ml-3 whitespace-nowrap">
+            Power Supply Unit
+          </span>
         </Link>
         <Link
           href="/storage"
-          class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
+          className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
         >
-          <Image src="/storage.png" width={30} height={30}></Image>
-          <span class="flex-1 ml-3 whitespace-nowrap">Storage</span>
+          <Image
+            alt="Storage"
+            src="/storage.png"
+            width={30}
+            height={30}
+          ></Image>
+          <span className="flex-1 ml-3 whitespace-nowrap">Storage</span>
         </Link>
         <Link
           href="/monitor"
-          class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
+          className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
         >
-          <Image src="/monitor.png" width={30} height={30}></Image>
-          <span class="flex-1 ml-3 whitespace-nowrap">Monitors</span>
+          <Image
+            alt="Monitor"
+            src="/monitor.png"
+            width={30}
+            height={30}
+          ></Image>
+          <span className="flex-1 ml-3 whitespace-nowrap">Monitors</span>
         </Link>
         <Link
           href="/others"
-          class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
+          className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "
         >
-          <Image src="/others.png" width={30} height={30}></Image>
-          <span class="flex-1 ml-3 whitespace-nowrap">Others</span>
+          <Image alt="Others" src="/others.png" width={30} height={30}></Image>
+          <span className="flex-1 ml-3 whitespace-nowrap">Others</span>
         </Link>
       </div>
     </div>

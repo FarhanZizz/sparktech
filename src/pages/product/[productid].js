@@ -11,6 +11,7 @@ const ProductDetails = () => {
       </h1>
       <div className="flex flex-col md:flex-row">
         <Image
+          alt="product"
           src="https://www.cloud.ryanscomputers.com/cdn/products/medium/mi-curved-34-inch-wqhd-3440x1440-gaming-monitor-11602570977.webp"
           width={100}
           height={100}
@@ -23,7 +24,7 @@ const ProductDetails = () => {
           </h1>
           <div className=" flex flex-col md:flex-row gap-5 my-5 items-center">
             <div className="flex gap-4">
-              <span class="text-3xl font-bold text-gray-900">$599</span>
+              <span className="text-3xl font-bold text-gray-900">$599</span>
 
               <div className="flex items-center gap-2">
                 <StarRating averageRating={2.3} />
