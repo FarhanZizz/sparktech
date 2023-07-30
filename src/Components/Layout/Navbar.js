@@ -20,7 +20,7 @@ const Navbar = () => {
 
       <li tabIndex={0}>
         <details>
-          <summary>Parent</summary>
+          <summary>Categories</summary>
           <ul className="w-48">
             <li>
               <Link href="/cpu">CPU / Processor</Link>

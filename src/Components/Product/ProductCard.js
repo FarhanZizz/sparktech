@@ -2,8 +2,10 @@ import React from "react";
 import StarRating from "./StarRating";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const ProductCard = ({ product }) => {
+  const router = useRouter();
   return (
     <div className="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow">
       <Image
@@ -16,11 +18,10 @@ const ProductCard = ({ product }) => {
       />
 
       <div className="px-5 pb-5">
-        <a href="#">
-          <h5 className="text-xl font-semibold tracking-tight text-gray-900">
-            {product["Product Name"]}
-          </h5>
-        </a>
+        <h5 className="text-xl font-semibold tracking-tight text-gray-900">
+          {product["Product Name"]}
+        </h5>
+
         <div className="grid grid-cols-1 md:grid-flow-col items-center gap-2 mt-2 mb-5">
           <div>
             <StarRating averageRating={product["Average Rating"]} />
@@ -51,6 +52,14 @@ const ProductCard = ({ product }) => {
           >
             View Details
           </Link>
+          {router.pathname === "/cpu" && (
+            <Link
+              href={`/`}
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >
+              homepage
+            </Link>
+          )}
         </div>
       </div>
     </div>
