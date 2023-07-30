@@ -2,7 +2,6 @@ import React from "react";
 import ProductCard from "../Product/ProductCard";
 
 const FeaturedProducts = ({ products }) => {
-  console.log(products);
   return (
     <div>
       <h1 className="text-4xl my-10 text-center text-gray-900">

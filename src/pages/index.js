@@ -23,7 +23,9 @@ HomePage.getLayout = function getLayout(page) {
 };
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:5000/featured-products");
+  const res = await fetch(
+    "https://sparktech-server.vercel.app/featured-products"
+  );
   const products = await res.json();
   return {
     props: {

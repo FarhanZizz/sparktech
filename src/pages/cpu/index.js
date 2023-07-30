@@ -23,7 +23,7 @@ CpuPage.getLayout = function getLayout(page) {
 
 export async function getStaticProps() {
   const res = await fetch(
-    "http://localhost:5000/all-products?category=CPU / Processor"
+    "https://sparktech-server.vercel.app/all-products?category=CPU / Processor"
   );
   const products = await res.json();
   return {

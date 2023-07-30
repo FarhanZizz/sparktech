@@ -83,7 +83,10 @@ const Navbar = () => {
         <ul className="menu menu-horizontal gap-10">{menu}</ul>
       </div>
       <div className="navbar-end">
-        <Link href="/pc-builder" className="btn btn-outline rounded-none ">
+        <Link
+          href="/pc-builder"
+          className="btn btn-outline rounded-nonebtn btn-xs sm:btn-sm md:btn-md  "
+        >
           PC Builder
         </Link>
       </div>

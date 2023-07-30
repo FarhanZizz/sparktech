@@ -97,7 +97,7 @@ ProductDetails.getLayout = function getLayout(page) {
 
 // This function gets called at build time
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:5000/all-products");
+  const res = await fetch("https://sparktech-server.vercel.app/all-products");
   const posts = await res.json();
 
   // Get the paths we want to pre-render based on posts
@@ -113,7 +113,9 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   // params contains the product `productid`.
   // If the route is like /products/1, then params.productid is 1
-  const res = await fetch(`http://localhost:5000/product/${params.productid}`);
+  const res = await fetch(
+    `https://sparktech-server.vercel.app/product/${params.productid}`
+  );
   const product = await res.json();
 
   // Pass product data to the page via props

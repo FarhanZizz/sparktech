@@ -22,7 +22,9 @@ OthersPage.getLayout = function getLayout(page) {
 };
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:5000/all-products?category=Others");
+  const res = await fetch(
+    "https://sparktech-server.vercel.app/all-products?category=Others"
+  );
   const products = await res.json();
   return {
     props: {

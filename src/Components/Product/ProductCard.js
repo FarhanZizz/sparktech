@@ -3,9 +3,17 @@ import StarRating from "./StarRating";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { chooseComponent } from "@/redux/store";
+import { useDispatch } from "react-redux";
 
 const ProductCard = ({ product }) => {
   const router = useRouter();
+  const dispatch = useDispatch();
+
+  const handleChooseComponent = (componentType, component) => {
+    dispatch(chooseComponent(componentType, component));
+    router.push("/pc-builder");
+  };
   return (
     <div className="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow">
       <Image
@@ -46,18 +54,20 @@ const ProductCard = ({ product }) => {
           <span className="text-3xl font-bold text-gray-900">
             ${product.Price}
           </span>
-          <Link
-            href={`/product/${product._id}`}
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-          >
-            View Details
-          </Link>
-          {router.pathname === "/cpu" && (
-            <Link
-              href={`/`}
+
+          {router.pathname.includes("/pc-builder") ? (
+            <button
+              onClick={() => handleChooseComponent(product.Category, product)}
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             >
-              homepage
+              Add To Builder
+            </button>
+          ) : (
+            <Link
+              href={`/product/${product._id}`}
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >
+              View Details
             </Link>
           )}
         </div>
