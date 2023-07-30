@@ -1,6 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-// Create a reducer function to handle state changes
 const initialState = {
   "CPU / Processor": null,
   Motherboard: null,
