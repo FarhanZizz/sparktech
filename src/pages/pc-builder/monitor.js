@@ -22,7 +22,7 @@ MonitorPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(
     "https://sparktech-server.vercel.app/all-products?category=Monitor"
   );
