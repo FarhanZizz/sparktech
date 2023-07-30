@@ -1,38 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SparkTech - PC Builder Website
 
-## Getting Started
+SparkTech is a cutting-edge PC builder website that empowers users to create their dream custom PC configurations. With six comprehensive product categories and in-depth details for each component, SparkTech ensures users have all the information they need to make informed decisions. The website features Google authentication for seamless login and logout, and the PC builder section is a protected route where users can assemble their perfect PC by choosing each part according to their preferences.
 
-First, run the development server:
+Live Link: [SparkTech - Build Your PC](https://sparktech-sable.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Product Categories: SparkTech offers six categories of PC components, including CPUs, GPUs, motherboards, RAM, storage, and power supplies.
+- Detailed Product Information: Users can access comprehensive details and specifications for each product, allowing them to compare and choose the best options.
+- User Authentication: SparkTech integrates Google authentication, providing a secure and convenient login and logout process.
+- PC Builder: The PC builder section is a protected route where registered users can customize their PC configurations by selecting individual parts from each category.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Technologies Used
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Front-end: Next.js, React.js, Redux, Tailwind CSS, DaisyUI 
+- Back-end: Express.js, MongoDB
+- Authentication: Google Authentication (OAuth)
+- State Management: Redux
+- Deployment: Vercel
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The SparkTech website is hosted on Vercel. To experience the thrill of building your dream PC, visit [SparkTech - Build Your PC](https://sparktech-sable.vercel.app/).
 
-## Learn More
+If you have any questions, or feedback, or encounter any issues during the PC building process, please don't hesitate to reach out to me.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We hope SparkTech enhances your PC-building journey and helps you create the ultimate computing experience! 💻🔧
